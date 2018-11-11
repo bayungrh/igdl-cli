@@ -15,6 +15,7 @@ Options:
 
 #### Example
 ![example](./bash.png)
+![download](./download.png)
 
 #### Downloads
 All results will be downloaded to the downloads folder at the root folder of this project.
