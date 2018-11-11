@@ -1,0 +1,13 @@
+<?php
+require __DIR__.'/vendor/autoload.php';
+$sVersion = getenv('VERSION') ?: '0.0.1';
+define('VERSION', <<<HEREDOC
+InstaDL CLI $sVersion - MuhBayu <bnugraha00@gmail.com>
+HEREDOC
+);
+$command = new IGdl\DownloadCommand;
+$application = new \Symfony\Component\Console\Application;
+$application->add($command);
+$application->setName(VERSION);
+$application->setDefaultCommand($command->getName(), true);
+$application->run();
