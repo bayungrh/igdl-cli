@@ -4,7 +4,7 @@ Instagram Download Media in PHP CLI
 
 ``` bash
 Usage:
-	download [options]
+  download [options]
 
 Options:
   -u, --url[=URL]             Instagram Post Url
